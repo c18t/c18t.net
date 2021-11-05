@@ -16,6 +16,6 @@ RUN set -x && \
 : "アプリディレクトリの所有者を変更" && \
   chown -R ${USER}:${USER} ${APP_DIR}
 
-RUN npm install -g gatsby-cli
 USER ${USER}
+RUN npm install gatsby
 EXPOSE ${PORT}
