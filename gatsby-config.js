@@ -3,5 +3,8 @@ module.exports = {
     siteUrl: "https://c18t.net",
     title: "c18t.net",
   },
-  plugins: [],
+  plugins: [
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
+  ],
 };

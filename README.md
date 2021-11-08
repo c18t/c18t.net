@@ -6,6 +6,7 @@ The source of c18t.net
 
 ```
 docker-compose up -d --build
+docker-compose exec gatsby npm install
 docker-compose exec gatsby npm run develop
 ```
 

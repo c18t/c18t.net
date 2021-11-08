@@ -11,11 +11,18 @@
     "start": "gatsby develop -H 0.0.0.0",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "ncu": "ncu"
   },
   "dependencies": {
-    "gatsby": "^4.1.0",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "gatsby": "^4.1.1",
+    "gatsby-plugin-image": "^2.1.0",
+    "gatsby-plugin-sharp": "^4.1.0",
+    "gatsby-source-filesystem": "^4.1.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "npm-check-updates": "^12.0.0"
   }
 }
