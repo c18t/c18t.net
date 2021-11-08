@@ -1,5 +1,6 @@
 /.cache
 /.git
+/article
 /node_modules
 /public
 /src
