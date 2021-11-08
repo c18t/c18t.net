@@ -10,6 +10,7 @@ services:
     ports:
       - '8000:8000'
     volumes:
+      - './article:/var/opt/app/article'
       - './public:/var/opt/app/public'
       - './src:/var/opt/app/src'
       - './gatsby-config.js:/var/opt/app/gatsby-config.js'

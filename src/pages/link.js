@@ -7,7 +7,7 @@ const listStyles = {
 
 const LinkPage = () => {
   return (
-    <Layout pageTitle="c18t.net - link">
+    <Layout pageTitle="Links">
       <ul>
         <li style={listStyles}><a href="https://twitter.com/c18t">@c18t</a></li>
       </ul>

@@ -8,7 +8,7 @@ const paragraphStyles = {
 
 const IndexPage = () => {
   return (
-    <Layout pageTitle="c18t.net">
+    <Layout>
       <p style={paragraphStyles}>Hello world.</p>
       <StaticImage
         src="../images/c18t.png"

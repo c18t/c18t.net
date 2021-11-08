@@ -1,7 +1,13 @@
 .page-styles {
   color: #232129;
-  padding: 96px;
+  padding: 64px 96px;
   font-family: "-apple-system, Roboto, sans-serif, serif";
+}
+.site-title {
+  font-size: 1.5rem;
+  color: gray;
+  font-weight: 700;
+  margin: 0 0 3rem;
 }
 .nav-links {
   display: flex;
@@ -13,8 +19,9 @@
 }
 .nav-link-text {
   color: black;
-}.heading-styles {
-  margin-top: 0;
-  margin-bottom: 64px;
+}
+.heading-styles {
+  margin-top: 32px;
+  margin-bottom: 32px;
   max-width: 320px;
 }
