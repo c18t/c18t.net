@@ -9,11 +9,11 @@ ENV PORT 8000
 WORKDIR ${APP_DIR}
 
 RUN set -x && \
-: "ユーザーを作成" && \
+  : "ユーザーを作成" && \
   useradd -s /bin/bash -d ${APP_DIR} -u ${USER_ID} -o ${USER} && \
-: "グループIDの修正" && \
+  : "グループIDの修正" && \
   groupmod -g ${GROUP_ID} -o ${USER} && \
-: "アプリディレクトリの所有者を変更" && \
+  : "アプリディレクトリの所有者を変更" && \
   chown -R ${USER}:${USER} ${APP_DIR}
 
 USER ${USER}

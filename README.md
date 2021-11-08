@@ -5,8 +5,8 @@ The source of c18t.net
 ## How to Get Started
 
 ```
-docker-compose build
-docker-compose run --rm -p 8000:8000 gatsby npm run develop
+docker-compose up -d --build
+docker-compose exec gatsby npm run develop
 ```
 
 ## Making
@@ -16,8 +16,8 @@ touch README.md
 touch Dockerfile
 touch .dockerignore
 touch docker-compose.yml
-docker-compose build
-docker-compose run --rm -p 8000:8000 gatsby new
+docker-compose up -d --build
+docker-compose exec gatsby ./node_modules/gatsby/cli.js new
 What would you like to call your site?
 ? ‣ My Gatsby Site
 What would you like to name the folder where your site will be created?
@@ -36,5 +36,5 @@ Done
 rm my-gatsby-site/README.md
 mv my-gatsby-site/* ./
 vi package.json # replace scripts "gatsby develop" to "gatsby develop -H 0.0.0.0"
-docker-compose run --rm -p 8000:8000 gatsby npm run develop
+docker-compose exec gatsby npm run develop
 ```

@@ -6,7 +6,12 @@ services:
     build:
       context: .
     container_name: gatsby
+    tty: true
     ports:
       - '8000:8000'
     volumes:
-      - '.:/var/opt/app'
+      - './public:/var/opt/app/public'
+      - './src:/var/opt/app/src'
+      - './gatsby-config.js:/var/opt/app/gatsby-config.js'
+      - './package-lock.json:/var/opt/app/package-lock.json'
+      - './package.json:/var/opt/app/package.json'

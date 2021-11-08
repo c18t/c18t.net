@@ -1,0 +1,20 @@
+.page-styles {
+  color: #232129;
+  padding: 96px;
+  font-family: "-apple-system, Roboto, sans-serif, serif";
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+.nav-link-item {
+  padding-right: 2rem;
+}
+.nav-link-text {
+  color: black;
+}.heading-styles {
+  margin-top: 0;
+  margin-bottom: 64px;
+  max-width: 320px;
+}
