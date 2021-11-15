@@ -17,5 +17,5 @@ RUN set -x && \
   chown -R ${USER}:${USER} ${APP_DIR}
 
 USER ${USER}
-RUN npm install gatsby
+RUN npm install gatsby@4.1
 EXPOSE ${PORT}

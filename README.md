@@ -1,10 +1,10 @@
-# c18t.net
+# hello-gatsby
 
-The source of c18t.net
+Gatsby構成のテストです。
 
 ## How to Get Started
 
-```
+```console
 docker-compose up -d --build
 docker-compose exec gatsby npm install
 docker-compose exec gatsby npm run develop
@@ -12,11 +12,13 @@ docker-compose exec gatsby npm run develop
 
 ## Making
 
-```
+```console
 touch README.md
+touch .pre-commit-config.yml
+pre-commit install
 touch Dockerfile
 touch .dockerignore
-touch docker-compose.yml
+touch docker-compose.yaml
 docker-compose up -d --build
 docker-compose exec gatsby ./node_modules/gatsby/cli.js new
 What would you like to call your site?
