@@ -1,5 +1,5 @@
-import * as React from 'react'
-import { Link, useStaticQuery, graphql } from 'gatsby'
+import * as React from 'react';
+import { Link } from 'gatsby';
 import {
   pageStyles,
   siteTitle,
@@ -7,27 +7,23 @@ import {
   navLinkItem,
   navLinkText,
   headingStyles
-} from './layout.module.css'
+} from './layout.module.css';
+import useSiteMetadata from './useSiteMetadata';
 
-const Layout = ({ pageTitle, children }) => {
-  const data = useStaticQuery(graphql`
-    query {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
+interface LayoutProps {
+  pageTitle?: string | null,
+  children?: React.ReactNode,
+};
 
-  var titleText = data.site.siteMetadata.title
-  if (pageTitle) titleText = `${pageTitle} | ${titleText}`
-  const h1Text = pageTitle || data.site.siteMetadata.title
+const Layout: React.FC<LayoutProps> = ({ pageTitle, children }) => {
+  const data = useSiteMetadata();
+  let title = data.title;
+  let h1Text = title;
+  if (pageTitle) h1Text = pageTitle;
 
   return (
     <div className={pageStyles}>
-      <title>{titleText}</title>
-      <header className={siteTitle}>{data.site.siteMetadata.title}</header>
+      <header className={siteTitle}>{title}</header>
       <nav>
         <ul className={navLinks}>
           <li className={navLinkItem}>
@@ -46,6 +42,7 @@ const Layout = ({ pageTitle, children }) => {
         {children}
       </main>
     </div>
-  )
-}
-export default Layout
+  );
+};
+
+export default Layout;

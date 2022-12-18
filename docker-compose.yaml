@@ -11,8 +11,9 @@ services:
       - '8000:8000'
     volumes:
       - './article:/var/opt/app/article'
-      - './public:/var/opt/app/public'
       - './src:/var/opt/app/src'
-      - './gatsby-config.js:/var/opt/app/gatsby-config.js'
-      - './package-lock.json:/var/opt/app/package-lock.json'
+      - './gatsby-config.ts:/var/opt/app/gatsby-config.ts'
+      - './gatsby-node.ts:/var/opt/app/gatsby-node.ts'
       - './package.json:/var/opt/app/package.json'
+      - './pnpm-lock.yaml:/var/opt/app/pnpm-lock.yaml'
+      - './tsconfig.json:/var/opt/app/tsconfig.json'

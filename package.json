@@ -1,8 +1,9 @@
 {
-  "name": "c18t.net",
+  "name": "my-gatsby-site",
   "version": "1.0.0",
   "private": true,
-  "description": "My Gatsby Site",
+  "description": "my-gatsby-site",
+  "author": "ɯ̹t͡ɕʲi",
   "keywords": [
     "gatsby"
   ],
@@ -12,18 +13,25 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
+    "typecheck": "tsc --noEmit",
     "ncu": "ncu"
   },
   "dependencies": {
-    "gatsby": "^4.1.1",
-    "gatsby-plugin-image": "^2.1.0",
-    "gatsby-plugin-mdx": "^3.1.0",
-    "gatsby-plugin-sharp": "^4.1.0",
-    "gatsby-source-filesystem": "^4.1.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "@mdx-js/react": "^2.2.1",
+    "gatsby": "^5.3.2",
+    "gatsby-plugin-google-gtag": "^5.3.0",
+    "gatsby-plugin-image": "^3.3.2",
+    "gatsby-plugin-mdx": "^5.3.1",
+    "gatsby-plugin-sharp": "^5.3.2",
+    "gatsby-source-filesystem": "^5.3.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "npm-check-updates": "^12.0.0"
+    "@types/node": "^18.11.10",
+    "@types/react": "^18.0.26",
+    "@types/react-dom": "^18.0.9",
+    "npm-check-updates": "^16.6.0",
+    "typescript": "^4.9.3"
   }
 }

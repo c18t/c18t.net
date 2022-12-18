@@ -1,4 +1,4 @@
-FROM node:lts-bullseye
+FROM node:hydrogen-bullseye
 
 ENV USER gatsbty
 ENV USER_ID 1000
@@ -17,5 +17,5 @@ RUN set -x && \
   chown -R ${USER}:${USER} ${APP_DIR}
 
 USER ${USER}
-RUN npm install gatsby@4.1
+RUN npm install pnpm@7 gatsby@5.3.2
 EXPOSE ${PORT}
